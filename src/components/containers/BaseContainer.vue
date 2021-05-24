@@ -1,13 +1,13 @@
 <template>
   <div class="main-container">
     <div class="header-section">
-      <slot name="header">Header</slot>
+      <slot name="header"></slot>
     </div>
     <div class="main-body">
-      <slot>Body is default</slot>
+      <slot></slot>
     </div>
     <div class="footer-section">
-      <slot name="footer">footer section</slot>
+      <slot name="footer"></slot>
     </div>
   </div>
 </template>

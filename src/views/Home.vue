@@ -1,8 +1,14 @@
 <template>
   <div class="home">
     <BaseContainer>
+      <template v-slot:header>
+        <h1>Header</h1>
+      </template>
       <p>The main content will go in here and it will keep going and going</p>
       <p>With more here</p>
+      <template v-slot:footer>
+        <span>Footer goes here</span>
+      </template>
     </BaseContainer>
     <BaseButton to="/about"> </BaseButton>
   </div>
@@ -21,3 +27,9 @@ export default defineComponent({
   },
 });
 </script>
+
+<style lang="scss" scoped>
+.home {
+  display: flex;
+}
+</style>
