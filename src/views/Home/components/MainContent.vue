@@ -80,6 +80,7 @@
         pretium laoreet risus, eget dapibus justo finibus in.
       </div>
     </InfoContainer>
+    <MainForm />
   </div>
 </template>
 
@@ -88,6 +89,7 @@ import {defineComponent} from 'vue';
 import BaseContainer from '@/components/containers/BaseContainer.vue';
 import InfoContainer from '@/components/containers/InfoContainer.vue';
 import ImageContainer from '@/components/containers/ImageContainer.vue';
+import MainForm from '@/components/form/MainForm.vue';
 
 export default defineComponent({
   name: 'HomeMainContent',
@@ -95,6 +97,7 @@ export default defineComponent({
     BaseContainer,
     InfoContainer,
     ImageContainer,
+    MainForm,
   },
 });
 </script>

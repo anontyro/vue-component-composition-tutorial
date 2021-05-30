@@ -26,6 +26,7 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .text-content {
+  width: 100%;
   overflow: auto;
 }
 </style>
