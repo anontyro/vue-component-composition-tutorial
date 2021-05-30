@@ -1,15 +1,15 @@
 <template>
-  <BaseLink classOverload="primary-btn" @click="onClick">
+  <BaseLink classOverload="secondary-btn" @click="onClick">
     <span>{{ title }}</span>
   </BaseLink>
 </template>
 
 <script lang="ts">
-import {defineComponent} from 'vue';
+import Vue, {defineComponent} from 'vue';
 import BaseLink from './BaseLink.vue';
 
 export default defineComponent({
-  name: 'PrimaryButton',
+  name: 'SecondaryButton',
   components: {
     BaseLink,
   },
@@ -28,10 +28,7 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 @import '@/assets/css/mixins.scss';
-$bgColor: #2196f3;
-.primary-btn {
-  @include base-button-setup($bgColor);
-  background-color: $bgColor;
-  color: white;
+.secondary-btn {
+  @include base-button-setup;
 }
 </style>

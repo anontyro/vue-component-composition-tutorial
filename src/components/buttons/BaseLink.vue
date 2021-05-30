@@ -24,6 +24,7 @@ export default defineComponent({
 .link-item {
   cursor: pointer;
   padding: 10px;
+  display: inline-block;
   &:hover {
     color: darken(#2c3e50, 10%);
   }

@@ -30,10 +30,11 @@
         </div>
       </div>
       <div class="button-container">
-        <BaseLink @click="togglePreview">{{
-          state.isPreview ? 'Form' : 'Preview'
-        }}</BaseLink>
-        <BaseLink @click="submitForm">Submit Form</BaseLink>
+        <SecondaryButton
+          :title="state.isPreview ? 'Form' : 'Preview'"
+          @click="togglePreview"
+        />
+        <PrimaryButton title="Submit Form" @click="submitForm" />
       </div>
     </div>
   </InfoContainer>
@@ -41,13 +42,15 @@
 <script lang="ts">
 import Vue, {defineComponent, reactive} from 'vue';
 import InfoContainer from '../containers/InfoContainer.vue';
-import BaseLink from '../buttons/BaseLink.vue';
+import PrimaryButton from '../buttons/PrimaryButton.vue';
+import SecondaryButton from '../buttons/SecondaryButton.vue';
 
 export default defineComponent({
   name: 'MainForm',
   components: {
     InfoContainer,
-    BaseLink,
+    PrimaryButton,
+    SecondaryButton,
   },
   setup() {
     const state = reactive({
